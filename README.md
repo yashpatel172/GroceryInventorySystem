@@ -26,3 +26,7 @@ Web Project for University of Regina.
 • Fifthly PHP was used to construct a database back-end connection. Data storage and retrieval through a series of queries.
 
 • Finally, use AJAX and JSON to construct a front-end data update that happens every few seconds (Without refreshing the page).
+
+👉🏻 LIVE WEBSITE: (NOTE: Hosted on University server. Only use dummy input.)
+
+http://www2.cs.uregina.ca/~ynp062/Assignments/Assignment_6/login.php
