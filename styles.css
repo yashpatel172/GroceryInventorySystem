@@ -1,0 +1,284 @@
+/*-----------------------Navigation Bar-----------------------*/
+i
+{
+	color: white;
+    margin-right: 20px;
+}
+.container
+{
+	width: 80%;
+	margin: auto;
+}
+nav
+{
+	float: right;
+}
+nav ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav li
+{
+	margin-top: 8%;
+	margin-left: 70px;
+	display: inline-block;
+	position: relative;
+}
+nav a
+{
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+header
+{
+    background-color: #36393f; 
+}
+header::after
+{
+	display: table;
+	clear: both;
+	content: '';
+}
+nav a:hover
+{
+	color: #f2f2f2;
+}
+nav a::before
+{
+	content: '';
+	display:block;
+	height: 2px;
+	background-color: white;
+
+	width: 0%;
+	bottom: 0;
+	position: absolute;
+	transition: all ease-in-out 250ms;
+}
+nav a:hover::before
+{
+	width: 100%;
+}
+/*-----------------------Basic Division Spacing-----------------------*/
+.spacer_list
+{
+	margin-top: 50px;
+}
+/*-----------------------LOGIN-----------------------*/
+.textFonts
+{
+    color: white;
+    font-size: 15px;
+}
+.dob_label
+{
+    padding-right: 90px;
+    padding-top: 10px;
+}
+.avatar_label
+{
+    margin-top: 20px;
+    padding-right: 100px;
+    padding-left: 75px;
+}
+.logo
+{
+	color : white;
+	font-size: 25px;
+	float: left;
+}
+.spacer{
+    margin-top: 120px;
+    margin-right: 500px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+}
+.spacer_signup
+{
+    margin-top: 30px;
+    margin-right: 500px;
+    margin-left: 500px;
+}
+/*-----------------------Division Boxes (Login & Signup)-----------------------*/
+.decor_signup
+{
+    background-color: #36393f;
+	box-shadow: 5px 5px 10px #36393fb2;  
+
+    padding-bottom: 5px; 
+    padding-top: 5px; 
+    border-radius: 10px;
+}
+.decor
+{
+    background-color: #36393f;
+	box-shadow: 5px 5px 10px #36393fb2;
+
+    padding-bottom: 30px; 
+    padding-top: 3px; 
+    border-radius: 10px;
+}
+.decorPost
+{
+    background-color: #36393f;
+	box-shadow: 5px 5px 10px #36393fb2;
+
+    border-radius: 10px;
+}
+.error
+{
+	position: fixed; 
+	bottom: 0;
+	width:100%; 
+	text-align: center;
+	color: white;
+	background-color: tomato;
+	margin-bottom: 0px;
+	padding: 5px;
+}
+
+/*-----------------------Grocery Lists-----------------------*/
+.unitcount
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.description 
+{
+	font-size: 15px;
+
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.center 
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+table, th, td 
+{
+	padding: 5px;
+}
+
+/*---------------------Input Boxes & there animation--------------------------*/
+select
+{
+	box-shadow: none;
+	font-size : 15px;
+	outline : none;
+	border : 2px solid white;
+	background-color : rgba(5,4,2,0.1);
+	border-radius : 1px;
+	color: rgb(216, 216, 216);
+
+	height : 35px;
+	width : 325px;
+}
+select:hover
+{
+	color: white;
+}
+
+input[type=text], input[type=email], input[type=password],input[type=number], input[type=date]
+{
+	font-size : 15px;
+	outline : none;
+	border : 2px solid white;
+	background-color : rgba(5,4,2,0.1);
+	color : white;
+
+	border-radius : 1px;
+	padding : 10px;
+	height : 10px;
+	width : 300px;
+	margin : 10px auto;
+	display : block;
+}
+.forFile
+{
+	display : block;
+	margin : 10px auto;
+}
+input[type=submit]
+{
+	font-size : 20px;
+	outline : none;
+	background-color : rgba(5,4,2,0.1);
+	color : white;
+	border : 2px solid white;
+
+	border-radius : 1px;
+	height : 40px;
+	width : 100px;
+	margin : 20px auto;
+	display : block;
+	transition: background-color 0.3s ease 0s;
+}
+button
+{
+	font-size : 20px;
+	outline : none;
+	background-color : rgba(5,4,2,0.1);
+	color : white;
+	border : 2px solid white;
+
+	border-radius : 1px;
+	height : 40px;
+	width : 100px;
+	margin : 20px auto;
+	transition: background-color 0.3s ease 0s;
+}
+textarea
+{
+	font-size : 15px;
+	outline : none;
+	border : 2px solid white;
+	background-color : rgba(5,4,2,0.1);
+	color : white;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 8px;
+}
+input[type=submit]:hover, button:hover
+{
+	background-color : white;
+	color: black;
+	border : none;
+	cursor: pointer;
+}
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder
+{
+	transition: opacity 0.2s linear, color 0.1s linear;
+}
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder
+{
+	color : white;
+}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder
+{
+	opacity: 0;
+}
+.err_msg
+{
+	color: grey;
+	font-size: 10px;
+	user-select: none;
+}
+.post_label 
+{
+	align-items: center;
+	display: block;
+}
+
+.consumeClass
+{
+	visibility: hidden;
+}

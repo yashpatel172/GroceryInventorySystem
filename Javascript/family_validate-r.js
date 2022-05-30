@@ -1,0 +1,1 @@
+document.getElementById("createfamilyform").addEventListener("submit", CreateFamily, false);
